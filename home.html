@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="public/assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />
+  <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a href="home.html">Logo</a>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Data</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+        <ul>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <!-- Table of collage subjects -->
+    <div class="table-container">
+      <div class="section-title">Daftar Matakuliah</div>
+      <table id="myTable" class="display">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Teacher</th>
+            <th>Time</th>
+            <th>Room</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics</td>
+            <td>Mr. John</td>
+            <td>9:00 AM - 10:00 AM</td>
+            <td>Room 1</td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td>Mr. Smith</td>
+            <td>10:00 AM - 11:00 AM</td>
+            <td>Room 2</td>
+          </tr>
+          <tr>
+            <td>Chemistry</td>
+            <td>Mr. David</td>
+            <td>11:00 AM - 12:00 PM</td>
+            <td>Room 3</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>Mr. Peter</td>
+            <td>12:00 PM - 1:00 PM</td>
+            <td>Room 4</td>
+          </tr>
+          <tr>
+            <td>History</td>
+            <td>Mr. John</td>
+            <td>1:00 PM - 2:00 PM</td>
+            <td>Room 5</td>
+          </tr>
+          <tr>
+            <td>Geography</td>
+            <td>Mr. Smith</td>
+            <td>2:00 PM - 3:00 PM</td>
+            <td>Room 6</td>
+          </tr>
+          <tr>
+            <td>Computer Science</td>
+            <td>Mr. David</td>
+            <td>3:00 PM - 4:00 PM</td>
+            <td>Room 7</td>
+          </tr>
+          <tr>
+            <td>Physical Education</td>
+            <td>Mr. Peter</td>
+            <td>4:00 PM - 5:00 PM</td>
+            <td>Room 8</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Biodata -->
+    <div class="biodata">
+      <div class="personal">
+        <p class="section-title">Informasi Personal</p>
+        <table class="personal-data">
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td>Joe</td>
+          </tr>
+          <tr>
+            <td>NIM</td>
+            <td>:</td>
+            <td>1234567890</td>
+          </tr>
+          <tr>
+            <td>Prodi</td>
+            <td>:</td>
+            <td>Teknik Informatika</td>
+          </tr>
+          <tr>
+            <td>Angkatan</td>
+            <td>:</td>
+            <td>2020</td>
+          </tr>
+        </table>
+      </div>
+      <!-- put image beside section content -->
+      <div class="image-personal">
+        <img src="public/assets/img/profile.png" alt="profile">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<script>
+  $(document).ready(function () {
+    $('#myTable').DataTable();
+  });
+</script>

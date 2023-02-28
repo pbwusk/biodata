@@ -1,96 +1,201 @@
-body {
-  background-color: #f2f2f2;
-  font-family: sans-serif;
-  margin: 0;
-}
-
-/* Set table to middle and add some border */
-table {
-  margin: auto;
-  border: 1px solid #1abc9c;
-  margin-top: 10px;
-}
-
-th,
-td {
-  border: 1px solid #1abc9c;
-  text-align: center;
-  font-size: 20px;
-  padding: 10px;
-}
-
-th {
-  background-color: #1abc9c;
-  font-size: 24px;
-  color: #fff;
-}
-
-/* Header */
-header {
-    padding: 10px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-  }
-
-
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background: #1abc9c;
-  color: #fff;
-  text-align: center;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  text-align: left;
+* {
+  margin:0;
   font-family: Arial, sans-serif;
 }
-.section-title {
-  text-align: center;  
-  font-size: 36px;
-  font-weight: bold;
-}
-.section-content {
-  margin-top: 10px;
-  font-family: 'Times New Roman', Times, serif;
-}
 
+/* ===== Login CSS ===== */
 
-.section-content p{
-    margin-top: 10px;
-    font-size: 20px;
+.login-area {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
 }
 
-
-.section-image {
-    margin-top: 10px;
-    width: 50%;
-    float: right;
-    border: #0a0a0a 1px solid;
-}
-
-/* make card profile and the position in the right side without using float */
-.card-profile {
-  float: right;  
-  width: 30%;
-  margin-right: 15px;
-  margin-top: 10px;
-  padding: 10px;
-  border: 1px solid #1abc9c;
+.login-box {
+  width: 400px;
+  background-color: #fff;
+  padding: 20px;
   border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+}
+
+.login-text {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.login-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-input[type="text"],
+.login-input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.login-input[type="submit"] {
+  background-color: #337AB7;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.login-input[type="submit"]:hover {
+  background-color: #195181;
+  transition: 0.5s;
+  
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+/* ===== Login CSS ===== */
+
+/* ===== Home CSS ===== */
+
+.navbar {
+  background-color: #fff;
+  height: 70px;
+  margin-bottom: 20px;
+  padding: 20px 20px 0px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-logo a {
+  font-size: 30px;
+  font-weight: bold;
+  color: #337AB7;
+  text-decoration: none;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links ul {
+  list-style: none;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links a {
+  color: #337AB7;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #000;
+  transition: 0.5s;
+  background-color: #337AB7;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.home-area {
+  padding: 20px 20px 0px 20px;
+  width: 80%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
 }
 
-.card-profile img {
+.content {
   width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  display: flex;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  width: 60%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+.content table th {
+  background-color: #337AB7;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+.biodata{
+  margin-left: 20px;
+  width: 40%;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 0px 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  font-size: 20px;
+}
+
+.personal{
+  width: 100%;
+}
+
+.personal-data td{
+  padding: 10px;
+}
+
+
+.image-personal img{
+  width: 80%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* ===== Home CSS ===== */
 
 
 
